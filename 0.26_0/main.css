@@ -1,0 +1,614 @@
+body
+{
+	font-family: arial, helvetica;
+	width: 245px;
+	background-color: #EBEBEB;
+	min-height: 325px;
+	position: relative;
+}
+
+#balanceBox
+{
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px #AAA;
+	padding: 5px;
+	display: block;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+button
+{
+	cursor:pointer;
+	margin-bottom: 3px;
+	background-color: #575757;
+	border: 0;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	box-shadow: 1px 1px 3px #AAA;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	outline: 0;
+}
+
+button:hover
+{
+	background-color: #333;
+}
+
+button:active
+{
+	background-color: #000;
+}
+
+#password
+{
+	display: none;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"])
+{
+
+	height: 26px;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+	padding: 5px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 3px #AAA;
+	border:0;
+}
+
+#gpgs
+{
+	font-size: 10px;
+	max-height: 107px;
+	overflow-y: scroll;
+	width: 234px !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+#gpgs::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#gpgs::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+#gpgs::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+#gpgs::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.savePasswordText
+{
+	font-size: 11px;
+/*	color: #333;
+*/}
+
+#tools, #gpgTools
+{
+	display: none;
+}
+
+.settings a
+{
+	display: block;
+	margin-bottom: 3px;
+	background-color: #0D88CE;
+	border: 0;
+	padding: 8px;
+	border-radius: 5px;
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	box-shadow: 1px 1px 3px #AAA;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+#gpgCreate2
+{
+	background-color: #FDC945;
+	color: #000;
+}
+
+#gpgCreate2:hover
+{
+	background-color: #E5B741;
+}
+
+.settings a:hover
+{
+	background-color: #076CA5;;
+}
+.settings a:active
+{
+	background-color: #000;
+}
+
+
+
+#foundTitle
+{
+	display: none;
+}
+input
+{
+	outline: 0;
+}
+
+#gpgPassword
+{
+	width: 184px !important;
+	height: 23px !important;
+}
+
+
+#keyboardBtn img 
+{
+	width: 24px;
+}
+
+#keyboardBtn
+{
+	line-height: 23px
+}
+
+#gpgEncryptTxt, #gpgDecryptTxt, #gpgPublicKey, #gpgPrivateKey, #gpgPassword, #gpgBox
+{
+	width: 223px;
+	height: 100px;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+	padding: 5px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 3px #AAA;
+	border:0;
+}
+
+#qrLink
+{
+	font-size: 10px;
+	text-decoration: underline;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+}
+
+#qrImage
+{
+	margin-top: 5px;
+}
+
+#fiatValue
+{
+	font-size: 12px;
+	display: block;
+}
+
+#addressTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	display: none;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+#send:hover, #setInfo:hover, #resetAddress:hover
+{
+	background-color: #076CA5;;
+}
+
+#addressBox
+{
+	word-wrap:break-word;
+}
+
+#addressBox
+{
+	padding: 5px;
+	font-size: 11px;
+	background-color: #FFF;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: center;
+	box-shadow: 1px 1px 3px #AAA;
+}
+
+#send, #setInfo
+{
+	background-color: #0D88CE;
+	border: 0;
+	padding: 8px;
+	border-radius: 5px;
+	font-size: 12px;
+	width: 107px;
+	height: 36px;
+	line-height: 12px;
+	box-shadow: 1px 1px 3px #AAA;
+	color:white;
+}
+
+
+#addresses
+{
+	max-height: 114px;
+	overflow-y: auto;
+	/*border-bottom: 1px solid #DDD;*/
+	padding-bottom: 10px;
+	display: none;
+}
+
+.bigbox
+{
+	height: 26px;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+	padding: 5px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 3px #AAA;
+	border:0;
+}
+
+.settings
+{
+	/*display: none;*/
+	margin-top: 10px;
+	position: relative;
+}
+
+#footer
+{
+	text-shadow: 1px 1px 1px #FFF;
+	font-weight: bold;
+	color: #616161;
+	font-size: 13px;
+	text-align: right;
+	padding: 4px 0px 0px 0;
+}
+
+#logo
+{
+	float:right;
+}
+
+#help, #settings, #donate
+{
+	float: left;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+#settingsLink
+{
+	text-decoration: underline;
+	font-size: 14px;	
+	cursor: pointer;
+}
+
+a
+{
+	font-size: 12px;
+	color:#666;
+}
+
+#priceBox
+{
+	position: absolute;
+	right: 2px;
+	font-size: 12px;
+	top: -2px;
+	text-shadow: 1px 1px 1px #FFF;
+	color: #616161;
+	text-align: center;
+}
+
+#priceSrc
+{
+	color: #333;
+	font-size: 10px;
+	font-weight: normal;
+	border-bottom: 1px solid #AAA;
+	margin-bottom: 3px;
+}
+
+#walletTab, #gpgTab, #newsTab, #chartTab
+{
+	font-size: 14px;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px 5px 0 0;
+	background-color: #D3D3D3;
+	width: 32px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 1px -1px 1px #AAA;
+	position: relative;
+	height: 20px;
+
+}
+
+#newsTab
+{
+	background: url(news-icon.png ) no-repeat;
+	background-position: 7px 3px;
+	background-size: 26px;p
+}
+
+
+
+#gpgTab
+{
+	background: url(message_icon.png ) no-repeat;
+	background-position: 9px 5px;
+}
+
+#walletTab
+{
+	background: url(wallet_icon.png ) no-repeat;
+	background-position: 14px 5px;
+}
+
+#chartTab
+{
+	background: url(chart-icon.png ) no-repeat;
+	background-position: 10px 4px;
+	background-size: 23px;
+}
+
+#tabs div.selected
+{
+	background-color: #FDC945;;
+}
+
+#tabs div:hover:not(.selected):not(#priceBox)
+{
+	background-color: #ddd;
+}
+
+#tabs
+{
+	margin-bottom: 7px;
+	border-bottom: 1px solid #DDD;
+	height: 30px;
+}
+
+.newsDate
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #333;
+}
+
+
+
+#inbox
+{
+	display: none;
+}
+
+#messageList, #gpgs
+{
+	font-size: 12px;
+	max-height: 99px;
+	overflow-y: scroll;
+	border-bottom: 1px solid #DDD;
+	width: 244px;
+
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #AAA;
+	border: 0;
+	padding: 5px;
+	outline: 0;
+	color: #333;
+}
+
+.read
+{
+	color: #969696;
+}
+
+#messageList::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#messageList::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+#messageList::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+#messageList::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#messageBox::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#messageBox::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+#messageBox::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+#messageBox::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#messageBox
+{
+	max-height: 210px;
+	overflow-y: scroll;
+}
+
+#errorBox, #gpgErrorBox, #settingsErrorBox
+{
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+	background-color: #FFA5A5;
+	padding: 5px;
+	border-radius: 5px;
+	display: none;
+	word-wrap:break-word;
+	box-shadow: 1px 1px 3px #AAA;
+	color:#4E4E4E;
+}
+
+#news
+{
+/*	max-height: 530px;
+	overflow-y: scroll;*/
+}
+
+
+
+.newsTitle
+{
+	font-size: 12px;
+	text-decoration: underline;
+	color: #07668B;
+}
+
+.newsThumb
+{
+	float: left;
+	margin-right: 10px;
+	height: 63px;
+	/*overflow: hidden;*/
+	width: 70px;
+	text-align: center;
+	position: relative;
+
+}
+
+.newsThumb img
+{
+	max-height: 55px;
+}
+
+.newsBlank
+{
+	margin-top: 10px;
+}
+
+.newsTitleReddit
+{
+	font-size: 12px;
+	text-decoration: underline;
+	color: #07668B;
+	margin-left: 10px;
+}
+
+
+.newsItemReddit
+{
+	clear: both;
+	/*margin-bottom: 9px;*/
+	height: 55px;
+	overflow: hidden;
+	padding: 5px;
+	cursor: pointer;
+
+}
+
+
+.newsItem
+{
+	clear: both;
+	margin-bottom: 9px;
+	overflow: hidden;
+	cursor: pointer;
+
+}
+
+.newsPoints
+{
+	position: absolute;
+	top: -4px;
+	left: -2px;
+	background-color: #0D88CE;
+	color: #FFF;
+	font-size: 10px;
+	padding: 2px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 3px #333;
+}
+
+.newsItem:hover, .newsItemReddit:hover
+{
+	background-color: #FDC945;
+}
+
+#inboxTitle
+{
+	display: none;
+}
+
+#qr
+{
+	width: 16px;
+}
+
+.info 
+{
+	background-color: #808080;
+	display: inline-block;
+	width: 11px;
+	border-radius: 11px;
+	height: 11px;
+	color: #FFF;
+	text-align: center;
+	font-style: italic;
+	font-family: times new roman;
+}
+
+.title
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+#gpgPage, #newsPage, #chartPage, #settingsPage, #helpPage, #donatePage
+{
+	display: none;
+}
+
+.ui-tooltip,  {
+   background: #333;
+ }
+ .ui-tooltip {
+   padding: 5px;
+   color: white;
+   background: #333;
+   border-radius: 8px;
+   font: 10px "Helvetica Neue", Sans-Serif;
+   box-shadow: 0 0 7px #333;
+   white-space: nowrap;
+ }

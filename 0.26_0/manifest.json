@@ -1,0 +1,31 @@
+{
+   "author": "Steven Dakh",
+   "background": {
+      "scripts": [ "jquery.min.js", "openpgp.min.js", "bitcoinjs-min.js", "crypto.js", "tx.js", "util.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "KryptoKit_128.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+K"
+         }
+      }
+   },
+   "description": "In-browser Bitcoin Wallet and GPG tools",
+   "icons": {
+      "128": "KryptoKit_128.png",
+      "16": "KryptoKit_16.png",
+      "48": "KryptoKit_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsRSX5OPhj0neq3mTkECuavvO4zh/gIjgzrkJSiyrormpz9yxlyCVCr7vU9i5pDnRAR87tASKfIV3hURe4E/T7ArJD27n+/fNUNlK/hTi8H00pYdA9M+onGpwMmahTEMGM3sjT7Twb+VOpGzyuNH1T1J6tx9GNoKK3MI9dxjcFCZv7kqg09GkB0ZnQg2AWKb5zKTNMCkwlLxlw2KPnZCzdnaG66KcH10+Z3NOC3Mg5+WqHSfFFyyRvZWMa7S/Jh29+/r2j/Lk0w6zgYNZiW3nHUVdD99scoNhg2Ad2Mn7QrjdNLVt98Ne6zVIEhKkTprEnSJqyvku3EqONct6pO2s6wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "16.0.884",
+   "name": "KryptoKit",
+   "permissions": [ "clipboardWrite", "storage", "\u003Call_urls\u003E" ],
+   "short_name": "KryptoKit",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.26"
+}
